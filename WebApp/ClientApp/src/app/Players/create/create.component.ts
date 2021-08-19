@@ -40,7 +40,7 @@ export class CreateComponent implements OnInit {
 
   onSubmit(formData) {
     this.playersService.createPlayer(formData.value).subscribe(res => {
-      this.router.navigateByUrl('players/list');
+      this.router.navigateByUrl('/lists');
     });
   }
 }

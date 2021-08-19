@@ -35,13 +35,36 @@
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
     <Content Remove="$(SpaRoot)**" />
+    <Content Remove="ClientApp\src\app\Players\details - Copy\**" />
+    <Content Remove="ClientApp\src\app\Players\list\**" />
     <None Remove="$(SpaRoot)**" />
+    <None Remove="ClientApp\src\app\Players\details - Copy\**" />
+    <None Remove="ClientApp\src\app\Players\list\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="ClientApp\src\app\Players\details - Copy\**" />
+    <Compile Remove="ClientApp\src\app\Players\list\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\Players\details - Copy\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\Players\list\**" />
+    <TypeScriptCompile Remove="ClientApp\src\app\Players\details - Copy\**" />
+    <TypeScriptCompile Remove="ClientApp\src\app\Players\list\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="ClientApp\src\app\counter\counter.module.ts" />
+    <None Remove="ClientApp\src\app\Players\details - Copy\details.component.css" />
+    <None Remove="ClientApp\src\app\Players\details - Copy\details.component.html" />
+    <None Remove="ClientApp\src\app\Players\details - Copy\details.component.spec.js" />
+    <None Remove="ClientApp\src\app\Players\details - Copy\details.component.spec.js.map" />
+    <None Remove="ClientApp\src\app\Players\details - Copy\details.component.spec.ts" />
+    <None Remove="ClientApp\src\app\Players\details - Copy\details.component.ts" />
     <None Remove="ClientApp\src\app\Players\edit\edit.component.ts" />
+    <None Remove="ClientApp\src\app\Players\list\list.component.css" />
+    <None Remove="ClientApp\src\app\Players\list\list.component.html" />
+    <None Remove="ClientApp\src\app\Players\list\list.component.spec.ts" />
+    <None Remove="ClientApp\src\app\Players\list\list.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -50,8 +73,7 @@
     <TypeScriptCompile Remove="ClientApp\src\app\Players\details\details.component.spec.ts" />
     <TypeScriptCompile Remove="ClientApp\src\app\Players\details\details.component.ts" />
     <TypeScriptCompile Remove="ClientApp\src\app\Players\edit\edit.component.spec.ts" />
-    <TypeScriptCompile Remove="ClientApp\src\app\Players\list\list.component.spec.ts" />
-    <TypeScriptCompile Remove="ClientApp\src\app\Players\list\list.component.ts" />
+    <TypeScriptCompile Remove="ClientApp\src\app\Players\lists\lists.component.ts" />
     <TypeScriptCompile Remove="ClientApp\src\app\Players\player.module.ts" />
     <TypeScriptCompile Remove="ClientApp\src\app\Players\player.ts" />
     <TypeScriptCompile Remove="ClientApp\src\app\Players\players-routing.module.ts" />

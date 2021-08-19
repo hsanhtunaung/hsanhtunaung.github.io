@@ -1,37 +1,42 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import {MatTableModule} from '@angular/material/table';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-//import { CounterComponent } from './counter/counter.component';
-//import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { PlayersModule } from './Players/player.module';
-import { ListComponent } from "./Players/list/list.component";
+import { ListsComponent } from "./Players/lists/lists.component";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
-    HomeComponent
-  //,CounterComponent,
-   //FetchDataComponent
+    HomeComponent, 
+   FetchDataComponent
+    , ListsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
-    HttpClientModule,
+    MatPaginatorModule,
+       MatTableModule,
+      HttpClientModule,
     FormsModule,
-    PlayersModule,
+    PlayersModule, 
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-    //  { path: 'counter', component: CounterComponent },
-    //  { path: 'fetch-data', component: FetchDataComponent },
-      { path: 'players', component: ListComponent },
-    ])
+      { path: '', component: HomeComponent, pathMatch: 'full' },   
+      { path: 'fetch-data', component: FetchDataComponent },    
+      { path: 'lists', component: ListsComponent },
+    ]),
+    BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

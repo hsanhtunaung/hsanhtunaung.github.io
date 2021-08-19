@@ -51,7 +51,7 @@ export class EditComponent implements OnInit {
 
   onSubmit(formData) {
     this.playersService.updatePlayer(this.id, formData.value).subscribe(res => {
-      this.router.navigateByUrl('players/list');
+      this.router.navigateByUrl('/lists'); 
     });
   }
 }
