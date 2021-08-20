@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-
 import { Player } from "../player";
 import { Position } from "../position";
 import { PlayersService } from "../players.service";
