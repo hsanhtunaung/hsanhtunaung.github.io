@@ -1320,60 +1320,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
-  "./node_modules/core-js/features/reflect/index.js":
-  /*!********************************************************!*\
-    !*** ./node_modules/core-js/features/reflect/index.js ***!
-    \********************************************************/
-
-  /*! no static exports found */
-
-  /***/
-  function node_modulesCoreJsFeaturesReflectIndexJs(module, exports, __webpack_require__) {
-    var parent = __webpack_require__(
-    /*! ../../es/reflect */
-    "./node_modules/core-js/es/reflect/index.js");
-
-    __webpack_require__(
-    /*! ../../modules/esnext.reflect.define-metadata */
-    "./node_modules/core-js/modules/esnext.reflect.define-metadata.js");
-
-    __webpack_require__(
-    /*! ../../modules/esnext.reflect.delete-metadata */
-    "./node_modules/core-js/modules/esnext.reflect.delete-metadata.js");
-
-    __webpack_require__(
-    /*! ../../modules/esnext.reflect.get-metadata */
-    "./node_modules/core-js/modules/esnext.reflect.get-metadata.js");
-
-    __webpack_require__(
-    /*! ../../modules/esnext.reflect.get-metadata-keys */
-    "./node_modules/core-js/modules/esnext.reflect.get-metadata-keys.js");
-
-    __webpack_require__(
-    /*! ../../modules/esnext.reflect.get-own-metadata */
-    "./node_modules/core-js/modules/esnext.reflect.get-own-metadata.js");
-
-    __webpack_require__(
-    /*! ../../modules/esnext.reflect.get-own-metadata-keys */
-    "./node_modules/core-js/modules/esnext.reflect.get-own-metadata-keys.js");
-
-    __webpack_require__(
-    /*! ../../modules/esnext.reflect.has-metadata */
-    "./node_modules/core-js/modules/esnext.reflect.has-metadata.js");
-
-    __webpack_require__(
-    /*! ../../modules/esnext.reflect.has-own-metadata */
-    "./node_modules/core-js/modules/esnext.reflect.has-own-metadata.js");
-
-    __webpack_require__(
-    /*! ../../modules/esnext.reflect.metadata */
-    "./node_modules/core-js/modules/esnext.reflect.metadata.js");
-
-    module.exports = parent;
-    /***/
-  },
-
-  /***/
   "./node_modules/core-js/internals/a-function.js":
   /*!******************************************************!*\
     !*** ./node_modules/core-js/internals/a-function.js ***!
@@ -20111,16 +20057,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 
     var zone_js_dist_zone__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(zone_js_dist_zone__WEBPACK_IMPORTED_MODULE_0__);
-    /* harmony import */
-
-
-    var core_js_features_reflect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! core-js/features/reflect */
-    "./node_modules/core-js/features/reflect/index.js");
-    /* harmony import */
-
-
-    var core_js_features_reflect__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_features_reflect__WEBPACK_IMPORTED_MODULE_1__);
     /**
      * This file includes polyfills needed by Angular and is loaded before the app.
      * You can add your own extra polyfills to this file.
