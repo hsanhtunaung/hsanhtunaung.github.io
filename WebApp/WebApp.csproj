@@ -54,6 +54,8 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\counter\counter.module.ts" />
+    <None Remove="ClientApp\src\app\helper\auth.guard.ts" />
+    <None Remove="ClientApp\src\app\login\login.component.ts" />
     <None Remove="ClientApp\src\app\Players\details - Copy\details.component.css" />
     <None Remove="ClientApp\src\app\Players\details - Copy\details.component.html" />
     <None Remove="ClientApp\src\app\Players\details - Copy\details.component.spec.js" />
@@ -65,6 +67,7 @@
     <None Remove="ClientApp\src\app\Players\list\list.component.html" />
     <None Remove="ClientApp\src\app\Players\list\list.component.spec.ts" />
     <None Remove="ClientApp\src\app\Players\list\list.component.ts" />
+    <None Remove="ClientApp\src\app\register\register.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
